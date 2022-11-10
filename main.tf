@@ -6,6 +6,10 @@ resource "aws_instance" "web" {
     root_block_device {
     encrypted     = true
     }
+     metadata_options {
+       http_endpoint = "enabled"
+       http_tokens   = "required"
+    }
     tags= {
         Name="airbnb-poo"
     }
