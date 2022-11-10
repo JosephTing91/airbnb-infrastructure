@@ -7,7 +7,7 @@ resource "aws_instance" "web" {
     encrypted     = true
     }
     tags= {
-        Name="airbnb"
+        Name="airbnb-poo"
     }
 
 }
